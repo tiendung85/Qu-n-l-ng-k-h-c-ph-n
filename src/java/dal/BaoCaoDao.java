@@ -25,7 +25,7 @@ public class BaoCaoDao extends DBConnect {
         }
         return thongKe;
     }
-    
+    // anvbaefgh
     public List<Map<String, Object>> getThongKeSinhVienTheoLop() throws SQLException {
         List<Map<String, Object>> thongKe = new ArrayList<>();
         String sql = "SELECT lhp.MaLHP, lhp.TenHP, COUNT(dk.MaSV) as SoLuongSV, lhp.SoLuongSVTD " +
