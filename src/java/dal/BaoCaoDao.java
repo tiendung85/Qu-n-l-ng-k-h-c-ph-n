@@ -17,8 +17,12 @@ public class BaoCaoDao extends DBConnect {
         try (PreparedStatement stmt = c.prepareStatement(sql)) {
             stmt.setString(1, hocKy);
             stmt.setString(2, namHoc);
+            stmt.setString(3, namHoc);
+//                    ferf
+//                    fefee
+//                            feefe
             ResultSet rs = stmt.executeQuery();
-            
+            int a = 10;
             while (rs.next()) {
                 thongKe.put(rs.getString("TenHP"), rs.getInt("SoLuongDK"));
             }
